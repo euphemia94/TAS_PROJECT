@@ -10,5 +10,6 @@ jobs:
       uses: actions/checkout@v2
       - run: echo "the job was autoatically triggered by a $({github.event_name})"
       - run: python.main
+        - run: python.main
      
 
