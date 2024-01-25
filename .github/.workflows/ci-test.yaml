@@ -1,4 +1,4 @@
-name: Github Action Demo
+name: Merge ci
 
 on: [push]
   push:
