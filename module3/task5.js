@@ -1,4 +1,6 @@
-
+/*
+create a variable name it any day of the week, 
+*/
 
 const weekDay = 'wednesday'
 

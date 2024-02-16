@@ -2,15 +2,14 @@
 Return the number of vowels in a string.
 */
 function countVowels(str) {
-    // Use a regular expression to match vowels (case-insensitive)
+    // Use a regular expression to match vowels 
     const matches = str.match(/[aeiou]/gi);
-    
-    // If there are no matches, return "zero"
     if (matches === null) {
         return "zero";
     }
 
-    // Convert the count of matches to its string representation for numbers from 1 to 5
+    /* Convert the count of matches to its string representation 
+    for numbers from 1 to 5*/
     const countAsWords = {
         '1': 'one',
         '2': 'two',
