@@ -1,12 +1,20 @@
-name: merge ci
+name: JavaScript Tasks - CI/CD
+on: push
+jobs: 
+  Test:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v2
+      - run: echo "This job automatically triggered by ${{ github.event_name }} event"
+      - run: npm start
 
-on: [pull request]
-  push:
-    branches:
-      - main  
-jobs:
-      runs-on: ubuntu-latest
+  messageSlack: 
+    runs-on: ubuntu-latest
     steps:
-      uses: actions/checkout@v2
-      - run: echo "the job was autoatically triggered by a $({github.event_name})"
-      - run: python.main
+    - name: Notification Slack
+      uses: rtCamp/action-slack-notify@v2
+      env: 
+        SLACK_CHANNEL: task-review
+        SLACK_TITLE: EuphemiaN-CI
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
+        Status: ${{ job.status }}
