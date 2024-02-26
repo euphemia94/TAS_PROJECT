@@ -4,7 +4,7 @@
   "description": "learning nodejs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node module3/task5.js"
   },
   "author": "euphemia",
   "license": "ISC"
