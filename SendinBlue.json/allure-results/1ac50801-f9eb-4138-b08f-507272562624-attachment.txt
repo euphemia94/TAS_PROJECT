@@ -1,0 +1,13 @@
+{
+  "sender": {
+    "name": "Mary from MyShop",
+    "email": "no-reply@myshop.com"
+  },
+  "to": [
+    {
+      "email": "mauricio+unsubtest@sendinblue.com",
+      "name": "mauricio"
+    }
+  ],
+  "templateId": 69
+}

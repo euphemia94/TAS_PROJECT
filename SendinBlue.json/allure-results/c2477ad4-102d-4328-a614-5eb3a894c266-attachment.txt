@@ -1,0 +1,17 @@
+{
+  "content": "Get a discount by visiting our NY store and saying : Happy Spring!",
+  "name": "Spring Promo Code",
+  "sender": "MyShop",
+  "recipients": {
+    "listIds": [
+      54,
+      54
+    ],
+    "exclusionListIds": [
+      15,
+      15
+    ]
+  },
+  "scheduledAt": "sed",
+  "unicodeEnabled": true
+}

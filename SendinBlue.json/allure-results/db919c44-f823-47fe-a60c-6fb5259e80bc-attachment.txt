@@ -1,0 +1,8 @@
+{
+  "email": "{{email}}",
+  "attributes": {
+    "FNAME": "{{first_name}}"
+  },
+  "emailBlacklisted": false,
+  "smsBlacklisted": false
+}

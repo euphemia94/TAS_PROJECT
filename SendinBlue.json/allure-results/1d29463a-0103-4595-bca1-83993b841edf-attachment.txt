@@ -1,0 +1,16 @@
+{
+  "sender": {
+    "name": "Mary from MyShop",
+    "email": "contact@myshop.com",
+    "id": 3
+  },
+  "subject": "Thanks for your purchase !",
+  "templateName": "Order Confirmation - EN",
+  "tag": "OrderConfirmation",
+  "htmlContent": "The order n°xxxxx has been confirmed. Thanks for your purchase",
+  "htmlUrl": "https://html.domain.com",
+  "replyTo": "support@myshop.com",
+  "toField": "{FNAME} {LNAME}",
+  "attachmentUrl": "https://attachment.domain.com",
+  "isActive": true
+}

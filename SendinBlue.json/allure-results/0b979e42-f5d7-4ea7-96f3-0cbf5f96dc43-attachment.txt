@@ -1,0 +1,13 @@
+{
+  "value": "COUNT[BLACKLISTED,BLACKLISTED,<,NOW()]",
+  "enumeration": [
+    {
+      "label": "Men",
+      "value": 1
+    },
+    {
+      "label": "Men",
+      "value": 1
+    }
+  ]
+}

@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Sendinblue" tests="157" time="68.886">
+  <testsuite name="Sales CRM / Companies / Get all Companies" id="2f3003ab-ced5-437a-aa49-206e2bb6dce1" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="12.956">
+    <testcase name="response must be json" time="12.956" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status reason 'OK' but got 'BAD REQUEST'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Get all Companies.]]>
+        <![CDATA[Test description: response must be json.]]>
+        <![CDATA[Error message: expected response to have status reason 'OK' but got 'BAD REQUEST'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'OK' but got 'BAD REQUEST'
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="response must be valid and have a body" time="12.956" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Create a company" id="c1770d64-d22a-4360-92bc-87231c36041d" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.359">
+    <testcase name="Successful POST request" time="0.359" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected 201 to be an array">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Create a company.]]>
+        <![CDATA[Test description: Successful POST request.]]>
+        <![CDATA[Error message: expected 201 to be an array.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 201 to be an array
+   at Object.eval sandbox-script.js:1:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 500ms" time="0.359" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Get company attributes" id="443fcc61-cda9-4254-a878-32d17cd196da" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.358">
+    <testcase name="Content-Type is present" time="0.358" classname="Sendinblue"/>
+    <testcase name="Cookies should equal 1" time="0.358" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Link and Unlink company with contact and deal" id="dd92b642-f37b-4c8c-958d-bbc4d32ea30e" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.286">
+    <testcase name="header should equal 18" time="0.286" classname="Sendinblue"/>
+    <testcase name="Body matches string" time="0.286" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Get a company" id="823f6318-b0ad-472a-b144-be847f80e886" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.300">
+    <testcase name="Your test name" time="0.300" classname="Sendinblue"/>
+    <testcase name="Response time is above 200ms" time="0.300" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Delete a company" id="75d4bdd6-d3dc-4b49-a660-ab9f3b9381d5" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.306">
+    <testcase name="Status code is 204" time="0.306" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status code 204 but got 400">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Delete a company.]]>
+        <![CDATA[Test description: Status code is 204.]]>
+        <![CDATA[Error message: expected response to have status code 204 but got 400.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 204 but got 400
+   at Object.eval sandbox-script.js:1:6).]]>
+      </failure>
+    </testcase>
+    <testcase name="Date is present" time="0.306" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Update a company" id="6121e7b1-fcf8-4062-b123-aa4b40de71fa" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.298">
+    <testcase name="response must be json" time="0.298" classname="Sendinblue"/>
+    <testcase name="response must be valid and have a body" time="0.298" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Get pipeline stages" id="90de1e12-87fd-4908-9671-4f8e2732aa2c" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.315">
+    <testcase name="response must be json" time="0.315" classname="Sendinblue"/>
+    <testcase name="response must be valid and have a body" time="0.315" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / {{baseUrl}}/companies/:id" id="cd180e60-1585-445a-9e2b-bcdafe196cfa" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.319">
+    <testcase name="response should be json" time="0.319" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected { Object (message) } in response to contain property ''">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Companies / {{baseUrl}}/companies/:id.]]>
+        <![CDATA[Test description: response should be json.]]>
+        <![CDATA[Error message: expected { Object (message) } in response to contain property ''.]]>
+        <![CDATA[Stacktrace: AssertionError: expected { Object (message) } in response to contain property ''
+   at Object.eval sandbox-script.js:1:9).]]>
+      </failure>
+    </testcase>
+    <testcase name="response should be string" time="0.319" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Get all deals" id="58223a7c-d73e-4fed-8980-6905a5d59d32" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.835">
+    <testcase name="Connection is present" time="0.835" classname="Sendinblue"/>
+    <testcase name="Response time is less than 500ms" time="0.835" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected 835 to be below 500">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Deals / Get all deals.]]>
+        <![CDATA[Test description: Response time is less than 500ms.]]>
+        <![CDATA[Error message: expected 835 to be below 500.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 835 to be below 500
+   at Object.eval sandbox-script.js:2:10).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Create a deal" id="d92f1911-0510-4521-b6e3-725fcdf6dd2b" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="2" errors="0" time="0.273">
+    <testcase name="Successful POST request" time="0.273" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected 500 to be one of [ 201, 202 ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Deals / Create a deal.]]>
+        <![CDATA[Test description: Successful POST request.]]>
+        <![CDATA[Error message: expected 500 to be one of [ 201, 202 ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected 500 to be one of [ 201, 202 ]
+   at Object.eval sandbox-script.js:1:11).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has string" time="0.273" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status reason 'Created' but got 'Internal Server Error'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Deals / Create a deal.]]>
+        <![CDATA[Test description: Status code name has string.]]>
+        <![CDATA[Error message: expected response to have status reason 'Created' but got 'Internal Server Error'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'Created' but got 'Internal Server Error'
+   at Object.eval sandbox-script.js:2:11).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Link and Unlink a deal with contacts and companies" id="f95343f5-05ec-40e7-86d8-0ec84d71c987" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.294">
+    <testcase name="Your test name" time="0.294" classname="Sendinblue"/>
+    <testcase name="Response time is less than 600ms" time="0.294" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Get deal attributes" id="7b48fb02-ff03-4ade-be25-8541f61c7281" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.904">
+    <testcase name="Status code name has string" time="0.904" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status reason '0k' but got 'Internal Server Error'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Deals / Get deal attributes.]]>
+        <![CDATA[Test description: Status code name has string.]]>
+        <![CDATA[Error message: expected response to have status reason '0k' but got 'Internal Server Error'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason '0k' but got 'Internal Server Error'
+   at Object.eval sandbox-script.js:1:13).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.904" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Get a deal" id="482db850-0211-45d2-bc9f-f059b87fa8cb" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.365">
+    <testcase name="Body matches string" time="0.365" classname="Sendinblue"/>
+    <testcase name="header should equal 20" time="0.365" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Delete a deal" id="d22c23dc-ef44-475d-aa74-367ed1088c90" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.307">
+    <testcase name="header should equal 18" time="0.307" classname="Sendinblue"/>
+    <testcase name="Cookies should equal 1" time="0.307" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Update a deal" id="70c3f45e-9e06-46b6-9d13-103432cb1c37" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.324">
+    <testcase name="Cookies should equal 1" time="0.324" classname="Sendinblue"/>
+    <testcase name="Body matches string" time="0.324" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Get all tasks" id="483a1c3b-4cce-46ad-a3c0-15780ef8bc3d" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.567">
+    <testcase name="Body matches string" time="0.567" classname="Sendinblue"/>
+    <testcase name="Status code name has string" time="0.567" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status reason 'ok' but got 'Bad Request'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Tasks / Get all tasks.]]>
+        <![CDATA[Test description: Status code name has string.]]>
+        <![CDATA[Error message: expected response to have status reason 'ok' but got 'Bad Request'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'ok' but got 'Bad Request'
+   at Object.eval sandbox-script.js:2:17).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Create a task" id="c90e543f-7575-4c12-9eb7-a2ccbf3c4341" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.700">
+    <testcase name="Your test name" time="0.700" classname="Sendinblue"/>
+    <testcase name="header should equal number" time="0.700" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Get all task types" id="ada3d969-414e-458d-8fca-36da36279d6b" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="5.890">
+    <testcase name="Status code is 200" time="5.890" classname="Sendinblue"/>
+    <testcase name="Body matches string" time="5.890" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Get a task" id="b274f148-1406-457f-9b27-a4882a1f473b" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.586">
+    <testcase name="Response time is above 200ms" time="0.586" classname="Sendinblue"/>
+    <testcase name="Status code name has string" time="0.586" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status reason 'ok' but got 'Bad Request'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Tasks / Get a task.]]>
+        <![CDATA[Test description: Status code name has string.]]>
+        <![CDATA[Error message: expected response to have status reason 'ok' but got 'Bad Request'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'ok' but got 'Bad Request'
+   at Object.eval sandbox-script.js:2:20).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Delete a task" id="eed4b3e5-3096-4f27-bdfc-9d51707e09c6" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.548">
+    <testcase name="response must be valid and have a body" time="0.548" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Update a task" id="9b5e87e2-5a51-45c5-8bac-143d786926dc" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.536">
+    <testcase name="Your test name" time="0.536" classname="Sendinblue"/>
+    <testcase name="Server is present" time="0.536" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Get all notes" id="a34db15a-0445-4f31-8e96-6e3c907f8d5a" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.363">
+    <testcase name="Body matches string" time="0.363" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Create a note" id="004f66dd-b63f-41ee-9405-47b9dab61555" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.316">
+    <testcase name="18" time="0.316" classname="Sendinblue"/>
+    <testcase name="Successful POST request" time="0.316" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected 400 to be one of [ 201, 202 ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Notes / Create a note.]]>
+        <![CDATA[Test description: Successful POST request.]]>
+        <![CDATA[Error message: expected 400 to be one of [ 201, 202 ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected 400 to be one of [ 201, 202 ]
+   at Object.eval sandbox-script.js:2:24).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Get a note" id="40ea59d2-83ed-48c8-a4de-c71793569ecd" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.293">
+    <testcase name="Your test name" time="0.293" classname="Sendinblue"/>
+    <testcase name="Response time is above 500ms" time="0.293" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected 293 to be above 500">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Notes / Get a note.]]>
+        <![CDATA[Test description: Response time is above 500ms.]]>
+        <![CDATA[Error message: expected 293 to be above 500.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 293 to be above 500
+   at Object.eval sandbox-script.js:2:25).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Update a note" id="89793325-dd23-4d97-bc75-249315260b23" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.270">
+    <testcase name="Body matches string" time="0.270" classname="Sendinblue"/>
+    <testcase name="cookies equal 1" time="0.270" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Delete a note" id="7cfeda0c-9664-4834-bb7d-6853dea7ce4b" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.341">
+    <testcase name="Response time is less than 600ms" time="0.341" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.341" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Get all files" id="62a86a8f-5842-49c9-b64d-cc84e19c66e3" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.291">
+    <testcase name="response must be valid and have a body" time="0.291" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Upload a file" id="7b786929-a8a4-46ca-92d5-5d1a2909ebd4" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.289">
+    <testcase name="Successful POST request" time="0.289" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected 400 to be one of [ 201 ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Files / Upload a file.]]>
+        <![CDATA[Test description: Successful POST request.]]>
+        <![CDATA[Error message: expected 400 to be one of [ 201 ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected 400 to be one of [ 201 ]
+   at Object.eval sandbox-script.js:1:29).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is above 200ms" time="0.289" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Download a file" id="d8443466-2e11-42e8-8ef6-74d3573e85bf" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.294">
+    <testcase name="Your test name" time="0.294" classname="Sendinblue">
+      <failure type="AssertionFailure" message="Unexpected token 'h' at 1:1&#xA;handle HTTP: download files: invalid fileID: HTTP server code 400: invalid file&#xA;^">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Files / Download a file.]]>
+        <![CDATA[Test description: Your test name.]]>
+        <![CDATA[Error message: Unexpected token 'h' at 1:1
+handle HTTP: download files: invalid fileID: HTTP server code 400: invalid file
+^.]]>
+        <![CDATA[Stacktrace: JSONError: Unexpected token 'h' at 1:1
+handle HTTP: download files: invalid fileID: HTTP server code 400: invalid file
+^
+   at Object.eval sandbox-script.js:1:30).]]>
+      </failure>
+    </testcase>
+    <testcase name="Body matches string" time="0.294" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Delete a file" id="9173ec46-ffdb-4509-88bd-118332469a84" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.265">
+    <testcase name="Response time is above 200ms" time="0.265" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.265" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Get file details" id="72a11e4b-42ac-4813-8ddf-2ba0a815d7a0" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.303">
+    <testcase name="Cookies equal" time="0.303" classname="Sendinblue"/>
+    <testcase name="Status code name has string" time="0.303" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status reason 'ok' but got 'Bad Request'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Files / Get file details.]]>
+        <![CDATA[Test description: Status code name has string.]]>
+        <![CDATA[Error message: expected response to have status reason 'ok' but got 'Bad Request'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'ok' but got 'Bad Request'
+   at Object.eval sandbox-script.js:2:32).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Get an email campaign report" id="070ebc2c-9060-4f83-bbc6-face237b17f1" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.588">
+    <testcase name="Your test name" time="0.588" classname="Sendinblue"/>
+    <testcase name="Body matches string" time="0.588" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Update an email campaign" id="3fe8548b-39a2-4033-a10d-35a4e8434fae" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.268">
+    <testcase name="Response time is above 150ms" time="0.268" classname="Sendinblue"/>
+    <testcase name="CF-Cache-Status is present" time="0.268" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Delete an email campaign" id="580bedab-231a-4cb8-957a-e7096b2e85a3" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.265">
+    <testcase name="25" time="0.265" classname="Sendinblue"/>
+    <testcase name="Your test name" time="0.265" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Send an email campaign immediately, based on campaignId" id="a17bb374-9bd0-46a2-9fab-516d4d815d2b" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.305">
+    <testcase name="Successful POST request" time="0.305" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected 404 to be one of [ 201, 202 ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Send an email campaign immediately, based on campaignId.]]>
+        <![CDATA[Test description: Successful POST request.]]>
+        <![CDATA[Error message: expected 404 to be one of [ 201, 202 ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected 404 to be one of [ 201, 202 ]
+   at Object.eval sandbox-script.js:1:36).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.305" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Send an email campaign to your test list" id="7ecbe7b7-1b98-4c7f-acb7-7b311fc91a20" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.266">
+    <testcase name="response body json" time="0.266" classname="Sendinblue"/>
+    <testcase name="Response time is above 200ms" time="0.266" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Update an email campaign status" id="7ba62943-5719-4e7a-a8e3-d64e1e9fa998" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.275">
+    <testcase name="Your test name" time="0.275" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.275" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Send the report of a campaign" id="4bdfe1ef-1f06-4dd0-b9d0-f86db805be66" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.274">
+    <testcase name="Successful POST request" time="0.274" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected 404 to be one of [ 201, 202 ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Send the report of a campaign.]]>
+        <![CDATA[Test description: Successful POST request.]]>
+        <![CDATA[Error message: expected 404 to be one of [ 201, 202 ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected 404 to be one of [ 201, 202 ]
+   at Object.eval sandbox-script.js:1:39).]]>
+      </failure>
+    </testcase>
+    <testcase name="header equal 25" time="0.274" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Get an A/B test email campaign results" id="5a0c518a-9c21-42a7-9238-660172e21d38" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.289">
+    <testcase name="Status code is 200" time="0.289" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status code 200 but got 404">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Get an A/B test email campaign results.]]>
+        <![CDATA[Test description: Status code is 200.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 404.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 404
+   at Object.eval sandbox-script.js:1:40).]]>
+      </failure>
+    </testcase>
+    <testcase name="Body matches string" time="0.289" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Get a shared template url" id="40925ddb-7637-45d1-b529-f21f99930ed0" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.281">
+    <testcase name="Content-Type is present" time="0.281" classname="Sendinblue"/>
+    <testcase name="Your test name" time="0.281" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Export the recipients of an email campaign" id="aa146bd3-4b0d-4598-8f77-3a9658c09271" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.259">
+    <testcase name="Response time is less than abovems" time="0.259" classname="Sendinblue"/>
+    <testcase name="cookies equal 1" time="0.259" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Return all your created email campaigns" id="2bbc546b-5012-48bf-a2b9-780eaf9dd228" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.255">
+    <testcase name="Body matches string" time="0.255" classname="Sendinblue"/>
+    <testcase name="x-sib-ratelimit-reset is present" time="0.255" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Create an email campaign" id="fb88c200-fd5a-4fa8-9024-435c3f04a92e" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.269">
+    <testcase name="Status code name has string" time="0.269" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status reason 'Created' but got 'Bad Request'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Create an email campaign.]]>
+        <![CDATA[Test description: Status code name has string.]]>
+        <![CDATA[Error message: expected response to have status reason 'Created' but got 'Bad Request'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'Created' but got 'Bad Request'
+   at Object.eval sandbox-script.js:1:44).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is above 200ms" time="0.269" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Upload an image to your account's image gallery" id="281e731f-3157-47f6-959f-d09b4315686e" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.443">
+    <testcase name="Your test name" time="0.443" classname="Sendinblue"/>
+    <testcase name="Body matches string" time="0.443" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Returns the information for all your created SMS campaigns" id="d1572a2b-0172-4a7b-a054-00a610029249" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.292">
+    <testcase name="Body matches string" time="0.292" classname="Sendinblue"/>
+    <testcase name="Response time is above 200ms" time="0.292" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Creates an SMS campaign" id="ff0e5981-31f5-41ee-820d-a1c9820cd3ec" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.247">
+    <testcase name="response must be json" time="0.247" classname="Sendinblue"/>
+    <testcase name="response must be valid and have a body" time="0.247" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Get an SMS campaign" id="11c53463-e3b5-4b25-a0f2-2cc93eb33d6c" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.341">
+    <testcase name="response must be json" time="0.341" classname="Sendinblue"/>
+    <testcase name="response must be valid and have a body" time="0.341" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Update an SMS campaign" id="ca9dd845-d795-40e5-994b-c0d0a9b16a0c" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.358">
+    <testcase name="Response time is above 200ms" time="0.358" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.358" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Delete an SMS campaign" id="eec39da0-9d63-4b49-9e83-f8f5697b04c8" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.288">
+    <testcase name="Status code is 204" time="0.288" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status code 204 but got 404">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Marketing / SMS Campaigns / Delete an SMS campaign.]]>
+        <![CDATA[Test description: Status code is 204.]]>
+        <![CDATA[Error message: expected response to have status code 204 but got 404.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 204 but got 404
+   at Object.eval sandbox-script.js:1:50).]]>
+      </failure>
+    </testcase>
+    <testcase name="response must be json" time="0.288" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Send your SMS campaign immediately" id="a70142a4-bf08-442a-bd5e-03253fe0a0b2" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.290">
+    <testcase name="response must be valid and have a body" time="0.290" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Update a campaign's status" id="0284c50d-2bb5-4101-a8d1-272ead3ad86c" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.263">
+    <testcase name="campaignid status" time="0.263" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.263" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Send a test SMS campaign" id="d831fdf1-3efc-4823-9aed-179a3ddb1a57" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.320">
+    <testcase name="response must be json" time="0.320" classname="Sendinblue"/>
+    <testcase name="response must be valid and have a body" time="0.320" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Export an SMS campaign's recipients" id="fb688929-edcb-4a22-b289-20354383b8a1" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.300">
+    <testcase name="CF-Cache-Status" time="0.300" classname="Sendinblue"/>
+    <testcase name="cookies is present" time="0.300" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Send an SMS campaign's report" id="ca94b4ba-1912-4c07-9989-c5c0f1da4b2d" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.256">
+    <testcase name="response must be json" time="0.256" classname="Sendinblue"/>
+    <testcase name="response must be valid and have a body" time="0.256" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Send a message as an agent" id="a938f7dc-029f-49f4-94ff-a0492880a5cf" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.315">
+    <testcase name="Successful POST request" time="0.315" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected 401 to be one of [ 201, 202 ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Messages / Send a message as an agent.]]>
+        <![CDATA[Test description: Successful POST request.]]>
+        <![CDATA[Error message: expected 401 to be one of [ 201, 202 ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected 401 to be one of [ 201, 202 ]
+   at Object.eval sandbox-script.js:1:56).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 500ms" time="0.315" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Get a message" id="e6d99837-3fba-4978-9faf-30dfc85a640b" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.328">
+    <testcase name="response must be json" time="0.328" classname="Sendinblue"/>
+    <testcase name="response must be valid and have a body" time="0.328" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Update a message sent by an agent" id="275007f5-30dd-468c-a545-7e32a549b514" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.313">
+    <testcase name="Body matches string" time="0.313" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.313" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Delete a message sent by an agent" id="44be55b2-79ab-475a-a208-8ca438bf7705" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.307">
+    <testcase name="header Content" time="0.307" classname="Sendinblue"/>
+    <testcase name="Response time is above 200ms" time="0.307" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Status / Sets agent’s status to online for 2-3 minutes" id="b456c8d7-7a7c-4a27-9334-9f0b23a9d409" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.332">
+    <testcase name="response must be json" time="0.332" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.332" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Send an automated message to a visitor" id="2800dc27-dc1d-449f-a015-dd2c69b12021" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.306">
+    <testcase name="response must be json" time="0.306" classname="Sendinblue"/>
+    <testcase name="Response time is less than 700ms" time="0.306" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Get an automated message" id="df9c4217-ffaa-49b6-975c-0d3013717954" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.361">
+    <testcase name="Status code name has string" time="0.361" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status reason 'Created' but got 'Unauthorized'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Get an automated message.]]>
+        <![CDATA[Test description: Status code name has string.]]>
+        <![CDATA[Error message: expected response to have status reason 'Created' but got 'Unauthorized'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'Created' but got 'Unauthorized'
+   at Object.eval sandbox-script.js:1:62).]]>
+      </failure>
+    </testcase>
+    <testcase name="response must be valid and have a body" time="0.361" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Update an automated message" id="13b9891c-dd9d-4271-8c2c-188f145d293b" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.310">
+    <testcase name="Put request" time="0.310" classname="Sendinblue"/>
+    <testcase name="Body matches string" time="0.310" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Delete an automated message" id="e71b71d2-8755-4d73-a0e6-24580e951fc3" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.398">
+    <testcase name="Status code is 204" time="0.398" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status code 204 but got 401">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Delete an automated message.]]>
+        <![CDATA[Test description: Status code is 204.]]>
+        <![CDATA[Error message: expected response to have status code 204 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 204 but got 401
+   at Object.eval sandbox-script.js:1:64).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 600ms" time="0.398" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Get all the contacts" id="56fa7243-2e6d-4140-87af-9d5badb284e2" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="2" errors="0" time="0.285">
+    <testcase name="Status code is 200" time="0.285" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status code 200 but got 401">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Contacts / Get all the contacts.]]>
+        <![CDATA[Test description: Status code is 200.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 401
+   at Object.eval sandbox-script.js:1:65).]]>
+      </failure>
+    </testcase>
+    <testcase name="Body matches string" time="0.285" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;authentication not found …' to include 'email'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Contacts / Get all the contacts.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"authentication not found …' to include 'email'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"authentication not found …' to include 'email'
+   at Object.eval sandbox-script.js:2:65).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Create a contact" id="87987cb6-511a-4f0b-a6a6-05f4b2cba495" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.257">
+    <testcase name="Set-Cookie is present" time="0.257" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have header with key 'Set-Cookie'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Contacts / Create a contact.]]>
+        <![CDATA[Test description: Set-Cookie is present.]]>
+        <![CDATA[Error message: expected response to have header with key 'Set-Cookie'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have header with key 'Set-Cookie'
+   at Object.eval sandbox-script.js:1:66).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is above 200ms" time="0.257" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Create Contact via DOI (Double-Opt-In) Flow" id="5c1b0301-04e3-45fc-b808-738289412a49" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.252">
+    <testcase name="Successful POST request" time="0.252" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected 401 to be one of [ 201, 202 ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Contacts / Create Contact via DOI (Double-Opt-In) Flow.]]>
+        <![CDATA[Test description: Successful POST request.]]>
+        <![CDATA[Error message: expected 401 to be one of [ 201, 202 ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected 401 to be one of [ 201, 202 ]
+   at Object.eval sandbox-script.js:1:67).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 900ms" time="0.252" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Update multiple contacts" id="364b2a67-cdb0-4c55-9231-06f9c68a8932" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.263">
+    <testcase name="Content-Type is present" time="0.263" classname="Sendinblue"/>
+    <testcase name="Body matches string" time="0.263" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Export contacts" id="81927915-7e39-42e5-8ceb-4b90c9a1010e" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.249">
+    <testcase name="header has 24 items" time="0.249" classname="Sendinblue"/>
+    <testcase name="export contact" time="0.249" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Import contacts" id="cf3af3cc-e93f-4277-be27-207e9388639f" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.254">
+    <testcase name="import contact" time="0.254" classname="Sendinblue"/>
+    <testcase name="Body matches string" time="0.254" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Get a contact's details" id="9444aac4-d113-4ef3-aeed-70a93a85fb9f" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.242">
+    <testcase name="response must be valid and have a body" time="0.242" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Delete a contact" id="92fce783-f757-4771-8fa1-bfda8900d854" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.254">
+    <testcase name="Status code is 204" time="0.254" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status code 204 but got 400">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Contacts / Delete a contact.]]>
+        <![CDATA[Test description: Status code is 204.]]>
+        <![CDATA[Error message: expected response to have status code 204 but got 400.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 204 but got 400
+   at Object.eval sandbox-script.js:1:72).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 800ms" time="0.254" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Update a contact" id="ac868b4d-784f-4f08-ac0d-3b8e115e2297" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.483">
+    <testcase name="Your test name" time="0.483" classname="Sendinblue"/>
+    <testcase name="Body matches string" time="0.483" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Get email campaigns' statistics for a contact" id="e32669d0-27d3-4dff-8808-aad85121917a" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.452">
+    <testcase name="response must be valid and have a body" time="0.452" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Get all folders" id="f9f6ce1c-4fc0-40f9-b47e-c87791119113" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.319">
+    <testcase name="response must be valid and have a body" time="0.319" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Create a folder" id="cb7af281-80d5-426b-8f97-ce1e902008d3" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.432">
+    <testcase name="Successful POST request" time="0.432" classname="Sendinblue"/>
+    <testcase name="Response time is less than 6500ms" time="0.432" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Returns a folder's details" id="cc6fd5b0-42d6-43d7-9de6-9bbf94497e7d" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.293">
+    <testcase name="response must be valid and have a body" time="0.293" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Update a folder" id="afb71c78-95b7-4048-8d46-10028f6082a4" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.252">
+    <testcase name="Server is present" time="0.252" classname="Sendinblue"/>
+    <testcase name="Body matches string" time="0.252" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Delete a folder (and all its lists)" id="d9bc6efc-65c4-4d25-bd91-87d1d75f21d0" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.256">
+    <testcase name="cookies should equal 1" time="0.256" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.256" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Get lists in a folder" id="817729ed-2939-47d5-96d3-e426305b36c7" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.266">
+    <testcase name="response must be valid and have a body" time="0.266" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Get all the lists" id="b7b4a6e7-9718-4205-81f7-a93bb0531f05" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.290">
+    <testcase name="response must be valid and have a body" time="0.290" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Create a list" id="51873bed-90af-47dd-8db0-490d07ef0ce4" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.277">
+    <testcase name="Content-Type is present" time="0.277" classname="Sendinblue"/>
+    <testcase name="Status code name has string" time="0.277" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Get contacts in a list" id="dfebb1a3-31f2-45b3-9420-16bd8c94f0c3" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.257">
+    <testcase name="response must be valid and have a body" time="0.257" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Add existing contacts to a list" id="c2665f3a-91d5-4d06-8216-d993eceefe5b" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.264">
+    <testcase name="Your test name" time="0.264" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.264" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Delete a contact from a list" id="d606d2dc-4247-4191-804f-5546f4cf0bf9" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="2" errors="0" time="0.233">
+    <testcase name="Check response properties" time="0.233" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status code 200 but got 404">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Lists / Delete a contact from a list.]]>
+        <![CDATA[Test description: Check response properties.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 404.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 404
+   at Object.eval sandbox-script.js:1:85).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code is 700" time="0.233" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status code 700 but got 404">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Lists / Delete a contact from a list.]]>
+        <![CDATA[Test description: Status code is 700.]]>
+        <![CDATA[Error message: expected response to have status code 700 but got 404.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 700 but got 404
+   at Object.eval sandbox-script.js:2:85).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Get a list's details" id="8a66643d-f3bd-4ea9-8193-a00cff55b42c" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.288">
+    <testcase name="cookies to equal number" time="0.288" classname="Sendinblue"/>
+    <testcase name="Body matches string" time="0.288" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Update a list" id="83030ca3-43a2-40fb-898b-d10f5f8b3d6d" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.237">
+    <testcase name="response must be valid and have a body" time="0.237" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Delete a list" id="8cbaa60f-e987-494f-aa98-8f99324e738d" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.245">
+    <testcase name="Status code is 204" time="0.245" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status code 204 but got 404">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Lists / Delete a list.]]>
+        <![CDATA[Test description: Status code is 204.]]>
+        <![CDATA[Error message: expected response to have status code 204 but got 404.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 204 but got 404
+   at Object.eval sandbox-script.js:1:88).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 900ms" time="0.245" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Attributes / List all attributes" id="e48971e0-2e7a-4cd5-bafd-fefc1ce8efee" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.255">
+    <testcase name="Status code is 200" time="0.255" classname="Sendinblue"/>
+    <testcase name="response must be valid and have a body" time="0.255" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Attributes / Update contact attribute" id="e11c37fd-c344-4eba-a6ea-901309040500" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.313">
+    <testcase name="update contact attribute" time="0.313" classname="Sendinblue"/>
+    <testcase name="Body matches string" time="0.313" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Attributes / Create contact attribute" id="2574936b-5b5c-4a38-a57b-a2940b86e732" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.243">
+    <testcase name="Successful POST request" time="0.243" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected 400 to be one of [ 201, 202 ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Attributes / Create contact attribute.]]>
+        <![CDATA[Test description: Successful POST request.]]>
+        <![CDATA[Error message: expected 400 to be one of [ 201, 202 ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected 400 to be one of [ 201, 202 ]
+   at Object.eval sandbox-script.js:1:91).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 600ms" time="0.243" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Attributes / Delete an attribute" id="c813ec60-1f24-451f-90c9-f0457eac1358" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.313">
+    <testcase name="Content-Type is present" time="0.313" classname="Sendinblue"/>
+    <testcase name="Response time is less than 600ms" time="0.313" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Send a transactional email" id="f171570f-276a-4e14-87aa-432b85af744c" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.253">
+    <testcase name="Successful POST request" time="0.253" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected 401 to be one of [ 201, 202 ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Email API / Send a transactional email.]]>
+        <![CDATA[Test description: Successful POST request.]]>
+        <![CDATA[Error message: expected 401 to be one of [ 201, 202 ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected 401 to be one of [ 201, 202 ]
+   at Object.eval sandbox-script.js:1:93).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 600ms" time="0.253" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Get the list of transactional emails on the basis of allowed filters" id="3bdc4d33-9db0-4346-bd3a-6e33b86efca5" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.261">
+    <testcase name="response must be valid and have a body" time="0.261" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Delete scheduled emails by batchId or messageId" id="46146bbf-dd52-4570-a3b5-15a9981f79be" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.357">
+    <testcase name="Content-Type is present" time="0.357" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.357" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Get the personalized content of a sent transactional email" id="360bab2e-f8bb-4c96-8548-027008b79d2d" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.318">
+    <testcase name="response must be valid and have a body" time="0.318" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Fetch scheduled emails by batchId or messageId" id="0e243599-dfe8-4eb3-9f1c-c2b55480a93a" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.253">
+    <testcase name="response must be valid and have a body" time="0.253" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Get the list of email templates" id="e2da85d1-fab1-4c55-9642-c99e5eff50dd" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.264">
+    <testcase name="Status code is 200" time="0.264" classname="Sendinblue"/>
+    <testcase name="Body matches curly bracket" time="0.264" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Create an email template" id="832d6be2-a5fe-4fe7-b871-f5019f0c27e5" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.249">
+    <testcase name="Content-Type is present" time="0.249" classname="Sendinblue"/>
+    <testcase name="Response time is less than 500ms" time="0.249" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Returns the template information" id="b7eb54b8-e2ef-40ad-b2ec-9a2b21fa136c" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.296">
+    <testcase name="response must be valid and have a body" time="0.296" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Update an email template" id="c252ee2f-8411-44e5-94e5-8538db540d16" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.239">
+    <testcase name="response must be valid and have a body" time="0.239" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Delete an inactive email template" id="57596572-cd69-4362-a3a4-ef4b99615be6" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.264">
+    <testcase name="CF-Cache-Status is present" time="0.264" classname="Sendinblue"/>
+    <testcase name="Response time is less than 500ms" time="0.264" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Send a template to your test list" id="b5e32df7-7261-4c23-bd8b-3466648503e9" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.244">
+    <testcase name="Successful POST request" time="0.244" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected 404 to be one of [ 201, 202 ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Templates / Send a template to your test list.]]>
+        <![CDATA[Test description: Successful POST request.]]>
+        <![CDATA[Error message: expected 404 to be one of [ 201, 202 ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected 404 to be one of [ 201, 202 ]
+   at Object.eval sandbox-script.js:1:103).]]>
+      </failure>
+    </testcase>
+    <testcase name="Header to be 25" time="0.244" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Statistics / Get your transactional email activity aggregated over a period of time" id="d89ad169-550a-4f2d-a966-8f0aefbb7219" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.251">
+    <testcase name="response must be valid and have a body" time="0.251" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Statistics / Get your transactional email activity aggregated per day" id="7e6c2780-570d-4474-8835-af8058e934b2" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.250">
+    <testcase name="Body matches string" time="0.250" classname="Sendinblue"/>
+    <testcase name="Your test name" time="0.250" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Statistics / Get all your transactional email activity (unaggregated events)" id="d56868be-05aa-4618-bab5-1f7b5d1c7cd2" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.265">
+    <testcase name="Status code name has string" time="0.265" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status reason 'ok' but got 'Unauthorized'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Statistics / Get all your transactional email activity (unaggregated events).]]>
+        <![CDATA[Test description: Status code name has string.]]>
+        <![CDATA[Error message: expected response to have status reason 'ok' but got 'Unauthorized'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'ok' but got 'Unauthorized'
+   at Object.eval sandbox-script.js:1:106).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 700ms" time="0.265" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Contacts / Get the list of blocked or unsubscribed transactional contacts" id="b87da0bb-fff7-4ef2-9683-ebe727ff0f9b" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.243">
+    <testcase name="response must be valid and have a body" time="0.243" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Contacts / Unblock or resubscribe a transactional contact" id="6602ccd7-7ae6-476a-91d2-399e0b40a160" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.258">
+    <testcase name="Status code is 204" time="0.258" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status code 204 but got 400">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Blocked Contacts / Unblock or resubscribe a transactional contact.]]>
+        <![CDATA[Test description: Status code is 204.]]>
+        <![CDATA[Error message: expected response to have status code 204 but got 400.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 204 but got 400
+   at Object.eval sandbox-script.js:1:108).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.258" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Domains / Get the list of blocked domains" id="3a6524e6-732b-453c-b49f-9b0e5676e24d" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.236">
+    <testcase name="Status code name has string" time="0.236" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status reason 'ok' but got 'OK'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Blocked Domains / Get the list of blocked domains.]]>
+        <![CDATA[Test description: Status code name has string.]]>
+        <![CDATA[Error message: expected response to have status reason 'ok' but got 'OK'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'ok' but got 'OK'
+   at Object.eval sandbox-script.js:1:109).]]>
+      </failure>
+    </testcase>
+    <testcase name="response must be valid and have a body" time="0.236" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Domains / Add a new domain to the list of blocked domains" id="f42707be-8dd7-432f-a18c-bc9801ba6bcf" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.240">
+    <testcase name="Successful POST request" time="0.240" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected 400 to be one of [ 201, 202 ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Blocked Domains / Add a new domain to the list of blocked domains.]]>
+        <![CDATA[Test description: Successful POST request.]]>
+        <![CDATA[Error message: expected 400 to be one of [ 201, 202 ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected 400 to be one of [ 201, 202 ]
+   at Object.eval sandbox-script.js:1:110).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 500ms" time="0.240" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Domains / Unblock an existing domain from the list of blocked domains" id="30d35322-fc6d-4b3c-80e1-11a253524ec8" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.242">
+    <testcase name="Your test name" time="0.242" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.242" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Logs / Delete hardbounces" id="68063c44-aaf9-4180-bf4b-f30f39106b09" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.258">
+    <testcase name="Your test name" time="0.258" classname="Sendinblue"/>
+    <testcase name="Content in header to equal 24" time="0.258" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Logs / Delete an SMTP transactional log" id="5e5b2ed7-f112-44e6-bb43-315a26ecc071" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.241">
+    <testcase name="Status code is 204" time="0.241" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status code 204 but got 400">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Logs / Delete an SMTP transactional log.]]>
+        <![CDATA[Test description: Status code is 204.]]>
+        <![CDATA[Error message: expected response to have status code 204 but got 400.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 204 but got 400
+   at Object.eval sandbox-script.js:1:113).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 800ms" time="0.241" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Inbound Email Parsing / Get the list of all the events for the received emails." id="33efddb1-3112-49c4-8695-11ea54bd77b8" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.268">
+    <testcase name="response must be valid and have a body" time="0.268" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Inbound Email Parsing / Fetch all events history for one particular received email." id="638c86bc-dfaf-4b6e-a90a-75592c87b83b" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.305">
+    <testcase name="response must be valid and have a body" time="0.305" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Inbound Email Parsing / Retrieve inbound attachment with download token." id="b246322f-5553-405c-8f2e-3284b58c1b50" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.339">
+    <testcase name="response must be valid and have a body" time="0.339" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Transactional SMS / Send SMS message to a mobile number" id="20ebb6b6-b0c4-4f42-9c0c-0f614c368fd9" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.258">
+    <testcase name="Status code is 201" time="0.258" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status code 201 but got 400">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Transactional SMS / Send SMS message to a mobile number.]]>
+        <![CDATA[Test description: Status code is 201.]]>
+        <![CDATA[Error message: expected response to have status code 201 but got 400.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 201 but got 400
+   at Object.eval sandbox-script.js:1:117).]]>
+      </failure>
+    </testcase>
+    <testcase name="etag is present" time="0.258" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / SMS statistics / Get your SMS activity aggregated over a period of time" id="65e75a06-254f-4500-8358-6bd2af7bf079" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.254">
+    <testcase name="response must be valid and have a body" time="0.254" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / SMS statistics / Get your SMS activity aggregated per day" id="466f5d9d-f8d1-4e1e-9460-238ae5e9906b" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.261">
+    <testcase name="response must be valid and have a body" time="0.261" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / SMS statistics / Get all your SMS activity (unaggregated events)" id="6a26492d-92e9-4af2-8448-b4b58baa9f62" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.272">
+    <testcase name="Content-Type is present" time="0.272" classname="Sendinblue"/>
+    <testcase name="Status code name has string" time="0.272" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status reason 'ok' but got 'Bad Request'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / SMS statistics / Get all your SMS activity (unaggregated events).]]>
+        <![CDATA[Test description: Status code name has string.]]>
+        <![CDATA[Error message: expected response to have status reason 'ok' but got 'Bad Request'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'ok' but got 'Bad Request'
+   at Object.eval sandbox-script.js:2:120).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Account / Webhooks / Get all webhooks" id="5c2240aa-9b6e-4536-82af-b3a2fe64bbb7" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.319">
+    <testcase name="response must be valid and have a body" time="0.319" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Webhooks / Create a webhook" id="190dfa5b-dc13-480e-8137-4850d4874f9d" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.235">
+    <testcase name="Successful POST request" time="0.235" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected 401 to be one of [ 201, 202 ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Webhooks / Create a webhook.]]>
+        <![CDATA[Test description: Successful POST request.]]>
+        <![CDATA[Error message: expected 401 to be one of [ 201, 202 ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected 401 to be one of [ 201, 202 ]
+   at Object.eval sandbox-script.js:1:122).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 600ms" time="0.235" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Webhooks / Get a webhook details" id="e9e1ecc5-4b3a-4b5f-a853-5fc0c843a893" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.307">
+    <testcase name="response must be valid and have a body" time="0.307" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Webhooks / Update a webhook" id="499db9f3-47df-475f-8a78-c0e95f1fb6db" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.253">
+    <testcase name="Body matches string" time="0.253" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.253" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Webhooks / Delete a webhook" id="40a86ed7-a420-4b2d-8888-8ffc3e7649b8" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.332">
+    <testcase name="Your test name" time="0.332" classname="Sendinblue"/>
+    <testcase name="sendinblue.com is present" time="0.332" classname="Sendinblue">
+      <failure type="AssertionFailure" message="Invalid Chai property: Cookies">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Webhooks / Delete a webhook.]]>
+        <![CDATA[Test description: sendinblue.com is present.]]>
+        <![CDATA[Error message: Invalid Chai property: Cookies.]]>
+        <![CDATA[Stacktrace: Error: Invalid Chai property: Cookies
+   at Object.eval sandbox-script.js:2:125).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Account / Reseller / Credits / Add Email and/or SMS credits to a specific child account" id="0ed92e44-43a6-4b7f-9a95-c58905885656" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.310">
+    <testcase name="Status code is 201" time="0.310" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status code 201 but got 403">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Reseller / Credits / Add Email and/or SMS credits to a specific child account.]]>
+        <![CDATA[Test description: Status code is 201.]]>
+        <![CDATA[Error message: expected response to have status code 201 but got 403.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 201 but got 403
+   at Object.eval sandbox-script.js:1:126).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 600ms" time="0.310" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Credits / Remove Email and/or SMS credits from a specific child account" id="031a4891-3f37-4b03-9571-6858be4189da" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.248">
+    <testcase name="Your test name" time="0.248" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to deeply equal 100">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Reseller / Credits / Remove Email and/or SMS credits from a specific child account.]]>
+        <![CDATA[Test description: Your test name.]]>
+        <![CDATA[Error message: expected undefined to deeply equal 100.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to deeply equal 100
+   at Object.eval sandbox-script.js:1:127).]]>
+      </failure>
+    </testcase>
+    <testcase name="Body matches string" time="0.248" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / IP management / Associate a dedicated IP to the child" id="cd5a7aa8-52ba-4760-b1fd-2a696388b50e" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.285">
+    <testcase name="Your test name" time="0.285" classname="Sendinblue"/>
+    <testcase name="Successful POST request" time="0.285" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected 403 to be one of [ 201, 202 ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Reseller / IP management / Associate a dedicated IP to the child.]]>
+        <![CDATA[Test description: Successful POST request.]]>
+        <![CDATA[Error message: expected 403 to be one of [ 201, 202 ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected 403 to be one of [ 201, 202 ]
+   at Object.eval sandbox-script.js:2:128).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Account / Reseller / IP management / Dissociate a dedicated IP to the child" id="91e6db63-e608-4a78-9f83-30346c0e3101" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.266">
+    <testcase name="Response time is less than 1000ms" time="0.266" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.266" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Domains / Get all sender domains for a specific child account" id="648cb9bd-3269-48cb-803c-137423a7dc54" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.251">
+    <testcase name="response must be valid and have a body" time="0.251" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Domains / Create a domain for a child account" id="a72ce60f-d33e-4ca6-9641-d81e0b04761f" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.255">
+    <testcase name="Status code is 201" time="0.255" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status code 201 but got 403">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Reseller / Domains / Create a domain for a child account.]]>
+        <![CDATA[Test description: Status code is 201.]]>
+        <![CDATA[Error message: expected response to have status code 201 but got 403.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 201 but got 403
+   at Object.eval sandbox-script.js:1:131).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.255" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Domains / Update the sender domain of reseller's child based on the childIdentifier and domainName passed" id="ff9841ed-7b89-4646-9032-8a479d60b6b1" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.260">
+    <testcase name="response must be valid and have a body" time="0.260" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Domains / Delete the sender domain of the reseller child based on the childIdentifier and domainName passed" id="1f00075d-7ed4-4ecd-9ea0-9225128b1a0e" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.238">
+    <testcase name="Your test name" time="0.238" classname="Sendinblue"/>
+    <testcase name="Response time is less than 900ms" time="0.238" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Get a child account's details" id="7c443585-e01c-4659-a7aa-b7357b8bb210" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.264">
+    <testcase name="response must be valid and have a body" time="0.264" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Update info of reseller's child based on the child identifier supplied" id="117cbc28-5dcd-46ed-bf48-f788a0bb2918" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.273">
+    <testcase name="Content-Type is present" time="0.273" classname="Sendinblue"/>
+    <testcase name="Your test name" time="0.273" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Delete a single reseller child based on the child identifier supplied" id="e02eb735-0991-4b7d-81ec-ad033d99f651" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="1" errors="0" time="0.223">
+    <testcase name="Response time is less than 700ms" time="0.223" classname="Sendinblue"/>
+    <testcase name="cookies equal 1" time="0.223" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have header with key '1'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d58898a6-f36f-404b-9856-0685d3b70923.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Reseller / Child accounts / Delete a single reseller child based on the child identifier supplied.]]>
+        <![CDATA[Test description: cookies equal 1.]]>
+        <![CDATA[Error message: expected response to have header with key '1'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have header with key '1'
+   at Object.eval sandbox-script.js:2:136).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Update info of reseller's child account status based on the identifier supplied" id="e8f6b712-1a1c-4c5a-99af-e70d9ff733f2" timestamp="2024-03-08T12:51:13.383Z" tests="0" failures="0" errors="0" time="0.277"/>
+  <testsuite name="Account / Reseller / Child accounts / Get the status of a reseller's child account creation, whether it is successfully created (exists) or not based on the childIdentifier supplied" id="9b0cfad8-338f-4a12-98fe-2b0637997588" timestamp="2024-03-08T12:51:13.383Z" tests="0" failures="0" errors="0" time="0.280"/>
+  <testsuite name="Account / Reseller / Child accounts / Get session token to access Sendinblue (SSO)" id="3c4e0b6d-6b08-4d7e-9833-427a3ff4061e" timestamp="2024-03-08T12:51:13.383Z" tests="0" failures="0" errors="0" time="0.271"/>
+  <testsuite name="Account / Reseller / Child accounts / Get the list of all children accounts" id="80f0a180-a5fa-47a7-a7bd-c5086a99f66b" timestamp="2024-03-08T12:51:13.383Z" tests="0" failures="0" errors="0" time="0.284"/>
+  <testsuite name="Account / Reseller / Child accounts / Creates a reseller child" id="a5e44640-d890-436b-910c-e9128ab054af" timestamp="2024-03-08T12:51:13.383Z" tests="0" failures="0" errors="0" time="0.249"/>
+  <testsuite name="Account / Process / Return all the processes for your account" id="f972c5b1-7e0c-475a-b830-27715fa1b65c" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="0.299">
+    <testcase name="response must be valid and have a body" time="0.299" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Process / Return the informations for a process" id="8cc256bf-077e-4399-81ef-4258705082a5" timestamp="2024-03-08T12:51:13.383Z" tests="2" failures="0" errors="0" time="1.285">
+    <testcase name="response must be valid and have a body" time="1.285" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Corporate / Get the details of requested master account" id="dc7a2546-a6cf-4d5d-bb31-743a4f450a6c" timestamp="2024-03-08T12:51:13.383Z" tests="0" failures="0" errors="0" time="0.258"/>
+  <testsuite name="Account / Corporate / Get the list of all the sub-accounts of the master account." id="c3b280d6-7110-4dd6-8cd8-d4a221cdc369" timestamp="2024-03-08T12:51:13.383Z" tests="0" failures="0" errors="0" time="0.235"/>
+  <testsuite name="Account / Corporate / Create a new sub-account under a master account." id="d83652d8-3d5f-4d05-a48e-2639e9da59b3" timestamp="2024-03-08T12:51:13.383Z" tests="0" failures="0" errors="0" time="0.235"/>
+  <testsuite name="Account / Corporate / Generate SSO token to access Sendinblue" id="23a88915-48a9-4a82-9649-ab49f4eaf477" timestamp="2024-03-08T12:51:13.383Z" tests="0" failures="0" errors="0" time="0.249"/>
+  <testsuite name="Account / Corporate / Get sub-account details" id="46bc919d-e962-4933-9df5-d79f09ba0571" timestamp="2024-03-08T12:51:13.383Z" tests="0" failures="0" errors="0" time="0.265"/>
+  <testsuite name="Account / Corporate / Delete a sub-account" id="87b01ee4-baac-47e6-bb49-004151fa8d6a" timestamp="2024-03-08T12:51:13.383Z" tests="0" failures="0" errors="0" time="0.246"/>
+  <testsuite name="Account / Corporate / Update sub-account plan" id="c17067b7-d2d9-4c3a-b82d-d3dc77730f85" timestamp="2024-03-08T12:51:13.383Z" tests="0" failures="0" errors="0" time="0.225"/>
+  <testsuite name="Account / Account data / Get your account information, plan and credits details" id="bbc5996c-2cd3-4631-90ca-68db894592c3" timestamp="2024-03-08T12:51:13.383Z" tests="0" failures="0" errors="0" time="1.494"/>
+  <testsuite name="Account / Senders / Get the list of all your senders" id="5b2a6957-f729-45b1-95e4-b3052808660a" timestamp="2024-03-08T12:51:13.383Z" tests="0" failures="0" errors="0" time="0.346"/>
+  <testsuite name="Account / Senders / Create a new sender" id="b56051d8-faee-4a96-9405-e974c84a5212" timestamp="2024-03-08T12:51:13.383Z" tests="0" failures="0" errors="0" time="0.673"/>
+  <testsuite name="Account / Senders / Get all the dedicated IPs for your account" id="cbb0f40e-cc25-4438-8a25-d6c6292da36d" timestamp="2024-03-08T12:51:13.383Z" tests="0" failures="0" errors="0" time="0.336"/>
+  <testsuite name="Account / Senders / Update a sender" id="5c739976-fe8d-4a42-84dd-fc785be65a27" timestamp="2024-03-08T12:51:13.383Z" tests="0" failures="0" errors="0" time="0.334"/>
+  <testsuite name="Account / Senders / Delete a sender" id="730302f7-95d6-4dea-ac02-0beac6d3bfe0" timestamp="2024-03-08T12:51:13.383Z" tests="0" failures="0" errors="0" time="0.313"/>
+  <testsuite name="Account / Senders / Get all the dedicated IPs for a sender" id="87676c37-17f6-4a54-a89f-14394594e318" timestamp="2024-03-08T12:51:13.383Z" tests="0" failures="0" errors="0" time="0.337"/>
+</testsuites>

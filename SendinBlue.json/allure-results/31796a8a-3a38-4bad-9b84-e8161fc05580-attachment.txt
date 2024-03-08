@@ -1,0 +1,1 @@
+{"message":"get all company and deal attributes: get mongodb client crm database: Crm db is not created yet. Please enable crm"}

@@ -1,0 +1,4 @@
+{
+  "folderId": 2,
+  "name": "Magento Customer - ES"
+}

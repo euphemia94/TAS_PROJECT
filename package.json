@@ -4,7 +4,7 @@
   "description": "learning nodejs",
   "main": "index.js",
   "scripts": {
-    "start": "node module3/task5.js"
+    "start": "node SendinBlue.json"
   },
   "author": "euphemia",
   "license": "ISC"

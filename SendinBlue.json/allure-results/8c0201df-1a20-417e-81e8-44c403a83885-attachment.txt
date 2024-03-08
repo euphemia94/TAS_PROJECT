@@ -1,0 +1,1 @@
+{"message":"Validate data: get owner: get owner from string: attributes.owner does not exists"}

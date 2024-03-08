@@ -1,0 +1,15 @@
+{
+  "name": "company",
+  "attributes": {
+    "category": "label_2",
+    "domain": "xyz",
+    "date": "2022-05-04T00:00:00+05:30",
+    "industry": "flipkart",
+    "number_of_contacts": 1,
+    "number_of_employees": 100,
+    "owner": "5b1a17d914b73d35a76ca0c7",
+    "phone_number": "81718441912",
+    "revenue": 10000.34222
+  },
+  "countryCode": 91
+}
