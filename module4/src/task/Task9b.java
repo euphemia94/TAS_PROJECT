@@ -21,7 +21,6 @@ public class Task9b {
             System.out.print("Please enter 'testify': ");
             input = scanner.nextLine();
         }
-    }
-}
 
+    }
 }
