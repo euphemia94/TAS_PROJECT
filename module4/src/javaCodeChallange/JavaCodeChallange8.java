@@ -12,7 +12,7 @@ public class JavaCodeChallange8 {
     }
 
     public static void countingSort(int[] arr) {
-        int[] count = new int[10]; // Count array to store frequencies of each element
+        int[] count = new int[10]; // Count array to store frequencies of each element e
 
         // Count frequencies
         for (int num : arr) {
