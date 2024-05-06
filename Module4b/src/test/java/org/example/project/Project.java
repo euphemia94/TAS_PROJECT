@@ -26,9 +26,9 @@ public class Project {
         driver.manage().window().maximize();
         //to navigate to web page, you will use this: driver.navigate() or driver.get()
         driver.get("https://www.automationexercise.com/");
-        //is advisible to introduce wait as seen below //input[@id='login-button']
-        //signing up as new user
         Thread.sleep(3000);
+
+        //signing up as new user
         driver.findElement(By.xpath("//header/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[4]/a[1]")).click();
         //fill user input: name and email
         driver.findElement(By.xpath("//body/section[@id='form']/div[1]/div[1]/div[3]/div[1]/form[1]/input[2]")).sendKeys("euphemia");
@@ -68,13 +68,23 @@ public class Project {
         driver.findElement(By.xpath(" //input[@id='zipcode']")).sendKeys("800111");
         driver.findElement(By.xpath(" //input[@id='mobile_number']")).sendKeys("07069029696");
         driver.findElement(By.xpath("//button[contains(text(),'Create Account')]")).click();
-        //driver.findElement(By.xpath("//a[contains(text(),'Continue')]")).click();
         String pageTitle = driver.getTitle();
         Assert.assertEquals(pageTitle, "ACCOUNT CREATED!");
+
         //go to product and purchase top
-
-
-
+        driver.findElement(By.xpath("//header/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/a[1]")).click();
+        driver.findElement(By.xpath("//body/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h4[1]/a[1]")).click();
+        driver.findElement(By.xpath("//body/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/a[1]")).click();
+        //view the top of choice and purchase
+        driver.findElement(By.xpath("//body/section[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/ul[1]/li[1]/a[1]")).click();
+        driver.findElement(By.xpath("//body/section[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/span[1]/button[1]")).click();
+        //go to cart
+        driver.findElement(By.xpath("//u[contains(text(),'View Cart')]")).click();
+        driver.findElement(By.xpath("//a[contains(text(),'Proceed To Checkout')]")).click();
+        driver.findElement(By.xpath("//body/section[@id='cart_items']/div[1]/div[6]/textarea[1]")).sendKeys("ensure to send the excert quality i ordered");
+        driver.findElement(By.xpath("//a[contains(text(),'Place Order')]")).click();
+        //driver.findElement(By.xpath("")).sendKeys("");
+    
 
 
 
