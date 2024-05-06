@@ -29,7 +29,7 @@ public class Task13 {
         driver.findElement(By.xpath("//body/div[1]/div[2]/div[1]/div[1]/div[1]/main[1]/div[2]/div[1]/div[1]/article[1]/div[1]/div[2]/div[3]/div[1]/a[1]")).click();
         WebElement country = driver.findElement(By.xpath("//body/div[1]/div[2]/div[1]/div[1]/div[1]/main[1]/div[2]/div[1]/div[1]/article[1]/div[1]/div[2]/div[3]/div[1]/a[1]"));
         WebElement month = driver.findElement(By.xpath("//option[contains(text(),'Month...')]"));
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         //using the select class
         Select select =new Select(country);
         select.selectByValue("NG");

@@ -29,14 +29,23 @@ public class Task16 {
         //to navigate to testify ltd,
         driver.get("https://testifyltd.com/");
         //get the footer element
-        WebElement emailEl =  driver.findElement(By.xpath("//div[@id='sc_content_777378833']/p[contains(text(),'EMAIL: info@testifyltd.co.uk')]"));
-        WebElement locationEl =  driver.findElement(By.xpath("//div[@id='sc_content_777378833']/p[contains(text(),'LOCATION: Nigeria')]"));
-        WebElement phoneEl = driver.findElement(By.xpath("//div[@id='sc_content_777378833']/p[contains(text(),'PHONE: (+234)904-882-0971')]"));
-        //call assert class to assert if element contain actual text
+        WebElement emailElement = driver.findElement(By.xpath("//footer//a[contains(@href, 'mailto:')]"));
+        WebElement locationElement = driver.findElement(By.xpath("//footer//span[contains(text(),'Location:')]/following-sibling::span"));
+        WebElement phoneElement = driver.findElement(By.xpath("//footer//span[contains(text(),'Phone:')]/following-sibling::span"));
+       //call assert class to assert if element contain actual text
+        String email = emailElement.getText();
+        String location = locationElement.getText();
+        String phone = phoneElement.getText();
 
-        Assert.assertTrue(emailEl.isDisplayed(), "Email is not displayed correctly");
-        Assert.assertTrue(locationEl.isDisplayed(), "Location is not displayed correctly");
-        Assert.assertTrue(phoneEl.isDisplayed(), "Phone number is not displayed correctly");
+        // Expected values
+        String expectedEmail = "info@testifyltd.co.uk";
+        String expectedLocation = "Nigeria";
+        String expectedPhone = "(+234)904-882-0971";
+
+        // Assert contact details
+        Assert.assertEquals(email, expectedEmail, "Email is incorrect");
+        Assert.assertEquals(location, expectedLocation, "Location is incorrect");
+        Assert.assertEquals(phone, expectedPhone, "Phone number is incorrect");
     }
     @AfterClass
     public void close() {

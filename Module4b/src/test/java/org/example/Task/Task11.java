@@ -25,7 +25,8 @@ public class Task11 {
         //to navigate to website
         driver.get("https://www.google.com/");
         driver.findElement(By.xpath("//textarea[@id='APjFqb']")).sendKeys("testify ltd");
-        driver.findElement(By.xpath("//body/div[1]/div[3]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/*[1]")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//body/div[1]/div[3]/form[1]/div[1]/div[1]/div[2]/div[4]/div[7]/center[1]/input[1]")).click();
         Thread.sleep(3000);
         // Click on the search result with www.testifyltd.com
         WebElement testifyLink = driver.findElement(By.xpath("//body/div[@id='main']/div[@id='cnt']/div[@id='rcnt']/div[@id='center_col']/div[@id='res']/div[@id='search']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/a[1]/div[1]/div[1]/div[1]/div[2]/cite[1]"));
