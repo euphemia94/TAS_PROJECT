@@ -2,7 +2,10 @@ package org.example.project;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 public class Project {
     public static void main(String[] args) throws InterruptedException {
@@ -25,17 +28,58 @@ public class Project {
         driver.get("https://www.automationexercise.com/");
         //is advisible to introduce wait as seen below //input[@id='login-button']
         //signing up as new user
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         driver.findElement(By.xpath("//header/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[4]/a[1]")).click();
-        //fill user input:name
+        //fill user input: name and email
         driver.findElement(By.xpath("//body/section[@id='form']/div[1]/div[1]/div[3]/div[1]/form[1]/input[2]")).sendKeys("euphemia");
-        Thread.sleep(5000);
-        //fill email
         driver.findElement(By.xpath("//body/section[@id='form']/div[1]/div[1]/div[3]/div[1]/form[1]/input[3]")).sendKeys("euphemiauc94@gmail.com");
-        Thread.sleep(5000);
-        //sign in //input[@id='id_gender2']
         driver.findElement(By.xpath("//button[contains(text(),'Signup')]")).click();
+        Thread.sleep(3000);
         driver.findElement(By.xpath("//input[@id='id_gender2']")).click();
+        driver.findElement(By.xpath("//input[@id='password']")).sendKeys("12345");
+        //select days, month, nd year
+        WebElement days = driver.findElement(By.xpath("//select[@id='days']"));
+        days.click();
+        Select select = new Select(days);
+        select.selectByIndex(22);
+        Thread.sleep(3000);
+        WebElement month = driver.findElement(By.xpath("//select[@id='months']"));
+        month.click();
+        Select selectMonth = new Select(month);
+        selectMonth.selectByIndex(2);
+        Thread.sleep(3000);
+        WebElement year = driver.findElement(By.xpath("//select[@id='years']"));
+        month.click();
+        Select selectYear = new Select(year);
+        selectYear.selectByValue("1994");
+        driver.findElement(By.xpath("//input[@id='newsletter']")).click();
+        driver.findElement(By.xpath("//input[@id='optin']")).click();
+        //fill address information form
+        driver.findElement(By.xpath("//input[@id='first_name']")).sendKeys("Euphemia");
+        driver.findElement(By.xpath("//input[@id='last_name']")).sendKeys("Nnaemeka ");
+        driver.findElement(By.xpath("//input[@id='company']")).sendKeys("Testify academy");
+        driver.findElement(By.xpath("//input[@id='address1']")).sendKeys("testify ltd");
+        WebElement country = driver.findElement(By.xpath("//select[@id='days']"));
+        country.click();
+        Select select1 = new Select(country);
+        select1.selectByVisibleText("Canada");
+        driver.findElement(By.xpath("//input[@id='state']")).sendKeys("Lagos");
+        driver.findElement(By.xpath("//input[@id='city']")).sendKeys("lagos city");
+        driver.findElement(By.xpath(" //input[@id='zipcode']")).sendKeys("800111");
+        driver.findElement(By.xpath(" //input[@id='mobile_number']")).sendKeys("07069029696");
+        driver.findElement(By.xpath("//button[contains(text(),'Create Account')]")).click();
+        //driver.findElement(By.xpath("//a[contains(text(),'Continue')]")).click();
+        String pageTitle = driver.getTitle();
+        Assert.assertEquals(pageTitle, "ACCOUNT CREATED!");
+        //go to product and purchase top
+
+
+
+
+
+
+
+
 
 
 

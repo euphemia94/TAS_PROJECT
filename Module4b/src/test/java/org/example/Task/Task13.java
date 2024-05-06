@@ -27,17 +27,19 @@ public class Task13 {
         driver.findElement(By.xpath("//header/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]")).sendKeys("Demo dropdown");
         driver.findElement(By.xpath("//header/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/label[1]/div[1]/*[1]")).click();
         driver.findElement(By.xpath("//body/div[1]/div[2]/div[1]/div[1]/div[1]/main[1]/div[2]/div[1]/div[1]/article[1]/div[1]/div[2]/div[3]/div[1]/a[1]")).click();
-        WebElement country = driver.findElement(By.xpath("//body/div[1]/div[2]/div[1]/div[1]/div[1]/main[1]/div[2]/div[1]/div[1]/article[1]/div[1]/div[2]/div[3]/div[1]/a[1]"));
-        WebElement month = driver.findElement(By.xpath("//option[contains(text(),'Month...')]"));
+        Thread.sleep(5000);
+        WebElement country = driver.findElement(By.xpath("//body/div[1]/div[2]/div[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[1]/div[3]/div[1]/div[1]/select[1]"));
+        country.click();
         Thread.sleep(5000);
         //using the select class
         Select select =new Select(country);
         select.selectByValue("NG");
         Thread.sleep(3000);
+        WebElement month = driver.findElement(By.xpath("//option[contains(text(),'Month...')]"));
         Select select2 =new Select(month);
-        select2.selectByValue("Jan");
-        select2.selectByValue("Feb");
-        select2.selectByValue("Ma");
+        select2.selectByVisibleText("January");
+        select2.selectByVisibleText("February");
+        select2.selectByVisibleText("March");
 
 
 
