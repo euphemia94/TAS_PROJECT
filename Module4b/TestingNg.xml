@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Angular Application Test Suite">
+
+    <test name="Test suit">
+        <classes>
+            <class name="org.example.Task.Task17a"/>
+            <class name="org.example.Task.Task17b"/>
+            <class name="org.example.Task.Task17c"/>
+            <class name="org.example.Task.Task17d"/>
+        </classes>
+    </test>
+
+</suite>
