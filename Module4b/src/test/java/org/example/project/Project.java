@@ -9,6 +9,8 @@ import org.testng.Assert;
 
 import java.util.Set;
 
+import static junit.framework.Assert.assertTrue;
+
 public class Project {
     public static void main(String[] args) throws InterruptedException {
         //Visit https://www.automationexercise.com/
@@ -64,14 +66,16 @@ public class Project {
         WebElement country = driver.findElement(By.xpath("//select[@id='days']"));
         country.click();
         Select select1 = new Select(country);
-        select1.selectByVisibleText("Canada");
+        select1.selectByIndex(2);
         driver.findElement(By.xpath("//input[@id='state']")).sendKeys("Lagos");
         driver.findElement(By.xpath("//input[@id='city']")).sendKeys("lagos city");
         driver.findElement(By.xpath(" //input[@id='zipcode']")).sendKeys("800111");
         driver.findElement(By.xpath(" //input[@id='mobile_number']")).sendKeys("07069029696");
         driver.findElement(By.xpath("//button[contains(text(),'Create Account')]")).click();
         String pageTitle = driver.getTitle();
-        Assert.assertEquals(pageTitle, "ACCOUNT CREATED!");
+        // Assert that the page contains the text "account created"
+        assertTrue(driver.findElement(By.tagName("body")).getText().contains("ACCOUNT CREATED!"));
+       // Assert.assertEquals(pageTitle, "account_created");
 
         //go to product and purchase top
         driver.findElement(By.xpath("//header/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/a[1]")).click();
