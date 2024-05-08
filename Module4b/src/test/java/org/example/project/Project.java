@@ -21,7 +21,7 @@ public class Project {
         //Go to the 'cart' section and proceed to checkout
         //Fill the checkout information and complete your order
         //@channel
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\USER\\Pictures\\Screenshots\\New folder\\ci-cd-testify\\module4\\src\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.d river", "C:\\Users\\USER\\Pictures\\Screenshots\\New folder\\ci-cd-testify\\module4\\src\\chromedriver.exe");
         //this set the executable property of the chrome driver
         //lunch browser
         WebDriver driver = new ChromeDriver();
