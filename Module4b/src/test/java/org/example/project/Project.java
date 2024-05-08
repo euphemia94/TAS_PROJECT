@@ -7,6 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
+import java.util.Set;
+
 public class Project {
     public static void main(String[] args) throws InterruptedException {
         //Visit https://www.automationexercise.com/
@@ -83,9 +85,64 @@ public class Project {
         driver.findElement(By.xpath("//a[contains(text(),'Proceed To Checkout')]")).click();
         driver.findElement(By.xpath("//body/section[@id='cart_items']/div[1]/div[6]/textarea[1]")).sendKeys("ensure to send the excert quality i ordered");
         driver.findElement(By.xpath("//a[contains(text(),'Place Order')]")).click();
+        //fill payment details: card name, card number, cvc, and year
+        driver.findElement(By.xpath("//body/section[@id='cart_items']/div[1]/div[3]/div[1]/div[2]/form[1]/div[1]/div[1]/input[1]")).sendKeys("Eupheia Uche");
         //driver.findElement(By.xpath("")).sendKeys("");
-    
+        driver.findElement(By.xpath("//body/section[@id='cart_items']/div[1]/div[3]/div[1]/div[2]/form[1]/div[2]/div[1]/input[1]")).sendKeys("89653685678");
+        driver.findElement(By.xpath("//body/section[@id='cart_items']/div[1]/div[3]/div[1]/div[2]/form[1]/div[3]/div[1]/input[1]")).sendKeys("123");
+        driver.findElement(By.xpath("//body/section[@id='cart_items']/div[1]/div[3]/div[1]/div[2]/form[1]/div[3]/div[2]/input[1]")).sendKeys("123");
+        driver.findElement(By.xpath("//body/section[@id='cart_items']/div[1]/div[3]/div[1]/div[2]/form[1]/div[3]/div[3]/input[1]")).sendKeys("2025");
+        driver.findElement(By.xpath("//button[@id='submit']")).click();
 
+        //SECTION B
+        //Without terminating the current window,launch another window and
+        // visit https://blazedemo.com/
+        // -Select Boston and Romeas departure and arrival destinations.-
+        // Click on “FindFlights”- Select a flight-Copy the flight number and paste into the Zip code field
+        // -Fill all other fields with valid inputs-Tick the‘Remember Me’checkbox and Purchase flight That’s
+
+        // Open a new window
+        String parentWindowHandle = driver.getWindowHandle();
+        String script = "window.open('https://blazedemo.com/', '_blank');";
+        ((ChromeDriver) driver).executeScript(script);
+        // Switch to the new window
+        Set<String> windowHandles = driver.getWindowHandles();
+        for (String handle : windowHandles) {
+            if (!handle.equals(parentWindowHandle)) {
+                driver.switchTo().window(handle);
+                break;
+            }
+        }
+        // Perform actions on the second window (BlazeDemo); select boston for departure and
+        WebElement departureCity= driver.findElement(By.xpath("//body/div[3]/form[1]/select[1]"));
+        departureCity.click();
+        Select selectDepCity = new Select(month);
+        selectDepCity.selectByIndex(2);
+        WebElement arrivalCity= driver.findElement(By.xpath("//body/div[3]/form[1]/select[2]"));
+        arrivalCity.click();
+        Select selectArrivalCity = new Select(month);
+        selectArrivalCity.selectByIndex(1);
+        driver.findElement(By.xpath("//body/div[3]/form[1]/div[1]/input[1]")).click();
+        Thread.sleep(3000);
+        //find and select flight
+        driver.findElement(By.xpath("//tbody/tr[2]/td[1]/input[1]")).click();
+        //fill form
+        driver.findElement(By.xpath("//input[@id='inputName']")).sendKeys("Euphemia");
+        driver.findElement(By.xpath("//input[@id='address']")).sendKeys("1234, bonston city");
+        driver.findElement(By.xpath("//input[@id='city']")).sendKeys("Bonston city");
+        driver.findElement(By.xpath("//input[@id='state']")).sendKeys("United State");
+        driver.findElement(By.xpath("//input[@id='zipCode']")).sendKeys("34566");
+        //select card type
+        WebElement cardType = driver.findElement(By.xpath("//select[@id='cardType']"));
+        cardType.click();
+        Select carType = new Select(month);
+        carType.selectByIndex(0);
+        driver.findElement(By.xpath("//input[@id='creditCardNumber']")).sendKeys("2345 6783 23564 3875");
+        driver.findElement(By.xpath("//input[@id='creditCardMonth']")).sendKeys("11");
+        driver.findElement(By.xpath("//input[@id='creditCardYear']")).sendKeys("2024");
+        driver.findElement(By.xpath("//input[@id='nameOnCard']")).sendKeys("Eupheia Uche");
+        driver.findElement(By.xpath("//input[@id='rememberMe']")).click();
+        driver.findElement(By.xpath("//body/div[2]/form[1]/div[11]/div[1]/input[1]")).click();
 
 
 
