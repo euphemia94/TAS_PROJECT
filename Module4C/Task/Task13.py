@@ -2,3 +2,10 @@
 # Invoke the same function in it own body
 # Invoke the function outside the function block
 # Take note of the function invoke and put the Python whitespace rule in mind
+
+# recursion error
+def greet():
+    print("hello world")
+    greet()
+
+greet()
