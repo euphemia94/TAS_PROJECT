@@ -14,15 +14,16 @@ class Vehcle(metaclass=abc.ABCMeta):
     def drive_direction(self):
         pass
 class Car(Vehcle):
-    def drive_direction(self, driveDirection):
-        pass
+    def drive_direction(self):
+        print("Drive forward")
+
 class Plan(Vehcle):
-    def drive_direction(self, driveDirection):
-        pass
+    def drive_direction(self):
+        print("Drive Upward")
 
 car = Car()
-print(car.drive_direction("Drive forward"))
-
 plan = Plan()
-car.drive_direction("Drive Upward")
+
+car.drive_direction()
+plan.drive_direction()
 
