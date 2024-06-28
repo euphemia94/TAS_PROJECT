@@ -12,7 +12,6 @@ def main():
         "platformVersion": "6",
         "app": "C:/Users/USER/Downloads/Android-MyDemoAppRN.1.1.0.build-226.apk",
         "appPackage": "com.saucelabs.mydemoapp.rn",
-        "appActivity": ".activities.Music",
         "noSign": True,
         #"androidInstallTimeout": 120000  # Increase install timeout to 2 minutes (120000 ms)
     }
