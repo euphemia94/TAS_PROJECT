@@ -8,16 +8,18 @@ def main():
     options = UiAutomator2Options()
     options.device_name = "Android Emulator"
     options.platform_name = "Android"
-    options.platform_version = "12"
-    options.app_package = "C:/Users/USER/Downloads/Android-MyDemoAppRN.1.1.0.build-226.apk"
+    options.platform_version = "6"
+    options.app = "C:/Users/USER/Downloads/Android-MyDemoAppRN.1.1.0.build-226.apk"
     options.appPackage: "com.saucelabs.mydemoapp.rn"
     options.no_sign = True
     #options.android_install_timeout = 120000  # Increase install timeout to 2 minutes
 
     driver = webdriver.Remote(command_executor="http://127.0.0.1:4723/wd/hub", options=options)
-    #loggins
-    
-    driver.quit()
+    # loggin
+    driver.find_element(AppiumBy.XPATH,'//android.view.ViewGroup[@content-desc="open menu"]/android.widget.ImageView').click()
+    driver.find_element(AppiumBy.XPATH,'//android.view.ViewGroup[@content-desc="products screen"]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]').click()
+    driver.find_element(AppiumBy.XPATH,'//android.widget.EditText[@content-desc="Password input field"]')
+    driver.find_element(AppiumBy.XPATH, '//android.widget.EditText[@content-desc="Username input field"]').send_keys("bob@example.com")
 
 if __name__ == '__main__':
     main()
