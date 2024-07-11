@@ -21,5 +21,29 @@ def main():
     driver.find_element(AppiumBy.XPATH,'//android.widget.EditText[@content-desc="Password input field"]')
     driver.find_element(AppiumBy.XPATH, '//android.widget.EditText[@content-desc="Username input field"]').send_keys("bob@example.com")
 
+    def get_cart_item_names(self):
+        item_names = []
+        cart_items = self.wait.until(EC.presence_of_all_elements_located(
+            (AppiumBy.XPATH, '//android.view.ViewGroup[@content-desc="cart item"]')))
+        for item in cart_items:
+            item_name = item.find_element(AppiumBy.XPATH, '//android.widget.TextView[@content-desc="item name"]').text
+            item_names.append(item_name)
+        return item_names
+
+    def get_cart_item_names(self):
+        # Wait for all items to be present
+        cart_items = self.wait.until(EC.presence_of_all_elements_located((AppiumBy.XPATH, '//android.view.ViewGroup[@content-desc="cart item"]/android.widget.TextView[@content-desc="item name"]')))
+
+        # Extract text from each element and store in a list
+        item_names = [item.text for item in cart_items]
+        return item_names
+
+    def my_cart_page_is_complete(self):
+        my_cart_page = wait.until(EC.presence_of_element_located((AppiumBy.XPATH, '//android.widget.TextView[@text="My Cart"]')))
+        assert my_cart_page.text == "My Cart", "My Cart page is incomplete"
+        print("My Cart page is complete")
+
+
+
 if __name__ == '__main__':
     main()
